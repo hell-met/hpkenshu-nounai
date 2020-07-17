@@ -577,7 +577,7 @@
       function tweetButton(){
         const tweet = document.createElement("div");
         tweet.setAttribute("id","tweet-btn");
-        const tw_contents = (`私のハロプロ研修生ヲタク脳は…%0a%0a【${listMembers[members[1]].rank}位】${listMembers[members[1]].name}%20-%20${listMembers[members[1]].per}％%0a【${listMembers[members[2]].rank}位】${listMembers[members[2]].name}%20-%20${listMembers[members[2]].per}％%0a【${listMembers[members[3]].rank}位】${listMembers[members[3]].name}%20-%20${listMembers[members[3]].per}％
+        const tw_contents = (`私のハロプロ研修生ヲタク脳は…%0a%0a【${listMembers[members[0]].rank}位】${listMembers[members[0]].name}%20-%20${listMembers[members[0]].per}％%0a【${listMembers[members[1]].rank}位】${listMembers[members[1]].name}%20-%20${listMembers[members[1]].per}％%0a【${listMembers[members[2]].rank}位】${listMembers[members[2]].name}%20-%20${listMembers[members[2]].per}％
         %0a%0a%23ハロプロ研修生ヲタク脳内診断%0a`);
         // const hash = ("ハロプロ研修生ヲタク脳内診断");
 
