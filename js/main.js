@@ -505,6 +505,11 @@
       inst.textContent = `結果 (進行度:100%)`;
       let chartData = [["name","point"]];
 
+      const chartText = document.createElement("div");
+      chartText.setAttribute("id","chart-text");
+      chartText.innerHTML = "<a>あなたの推し脳内は…</a>";
+      board.appendChild(chartText);
+
       const resultTable = document.createElement('table');
       resultTable.setAttribute("id","result-table");
 
@@ -535,7 +540,7 @@
       function resultListDisplay(){
         members.forEach(member => {
           const record = document.createElement('tr');
-          record.innerHTML = `<th>${listMembers[member].rank}位</th><td>${listMembers[member].name}</td><td>${listMembers[member].per}%</td><td>${listMembers[member].point}pt</td>`;
+          record.innerHTML = `<th>${listMembers[member].rank}位</th><td><img src="${listMembers[member].picture}" width="${80*(listMembers[member].per/listMembers[members[0]].per)}%"></td><td>${listMembers[member].name}</td><td>${listMembers[member].per}%</td>`;
 
           resultTable.appendChild(record);
         });
@@ -555,7 +560,7 @@
           );
           var options = { //オプションの指定
           pieSliceText: 'label',
-          title: 'あなたの推し脳内は…',
+          // title: 'あなたの推し脳内は…',
           width: "100%",
           height: 300,
           'titleTextStyle': { color:'#444444', fontSize: 13}
@@ -572,7 +577,7 @@
       function tweetButton(){
         const tweet = document.createElement("div");
         tweet.setAttribute("id","tweet-btn");
-        const tw_contents = (`私のハロプロ研修生脳は…%0a%0a【${listMembers[members[1]].rank}位】${listMembers[members[1]].name}%20-%20${listMembers[members[1]].per}％%0a【${listMembers[members[2]].rank}位】${listMembers[members[2]].name}%20-%20${listMembers[members[2]].per}％%0a【${listMembers[members[3]].rank}位】${listMembers[members[3]].name}%20-%20${listMembers[members[3]].per}％
+        const tw_contents = (`私のハロプロ研修生ヲタク脳は…%0a%0a【${listMembers[members[1]].rank}位】${listMembers[members[1]].name}%20-%20${listMembers[members[1]].per}％%0a【${listMembers[members[2]].rank}位】${listMembers[members[2]].name}%20-%20${listMembers[members[2]].per}％%0a【${listMembers[members[3]].rank}位】${listMembers[members[3]].name}%20-%20${listMembers[members[3]].per}％
         %0a%0a%23ハロプロ研修生ヲタク脳内診断%0a`);
         // const hash = ("ハロプロ研修生ヲタク脳内診断");
 
