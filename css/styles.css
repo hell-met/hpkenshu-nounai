@@ -118,36 +118,17 @@ header {
 @media screen and (max-width: 800px)
 /* レスポンシブ用 */
 {
-  #member-board{
-    margin: 0;
-    padding: 10px;
-    list-style: none;
-    /* display: block; */
-    flex-wrap: wrap;
-  
-    justify-content: center;
-  
-  }
   
   #member-board li{
-    background: #33D6AD;
-    min-width: 120px;
-    margin: 5px;
-    cursor: pointer;
-    border-radius: 4px;
-    text-align:center;
-    box-shadow: 0 4px 0 #00b386;
-    font-size: 14px;
-    user-select: none;
-    display: flex;
-    align-items: center;
     padding:3px;
+    align-items: center;
+    display: flex;
+    width: 45%;
   }
 
   #member-board img{
     margin-top: 0;
     width: 30%;
-    border-radius: 4px;
   }
 
   #member-board div{
