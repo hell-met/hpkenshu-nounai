@@ -546,7 +546,7 @@
       function resultListDisplay(){
         members.forEach(member => {
           const record = document.createElement('tr');
-          record.innerHTML = `<th>${listMembers[member].rank}位</th><td><img src="${listMembers[member].picture}" width="${80*(listMembers[member].per/listMembers[members[0]].per)}%"></td><td>${listMembers[member].name}</td><td>${listMembers[member].per}%</td>`;
+          record.innerHTML = `<th>${listMembers[member].rank}位</th><td><img src="${listMembers[member].picture}" width="${80*(listMembers[member].per/listMembers[members[0]].per)}%"></td><td class="result-name">${listMembers[member].name}</td><td class="result-per">${listMembers[member].per}%</td>`;
 
           resultTable.appendChild(record);
         });

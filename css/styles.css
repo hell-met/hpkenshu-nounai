@@ -408,6 +408,30 @@ header {
   background-color: #eee
 }
 
+#result-table th {
+  width: 15%;
+  padding: 3px 0;
+}
+
+.result-name {
+  width: 25%;
+  padding: 3px 0;
+}
+
+.result-per {
+  width: 10%;
+  padding: 3px 0;
+}
+
+@media screen and (max-width: 800px)
+/* レスポンシブ用 */
+{
+
+  #result-table{
+    width: 95%;
+  }
+}
+
 #ad {
   text-align: center;
   margin:10px;
