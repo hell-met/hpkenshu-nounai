@@ -93,6 +93,9 @@
     return arr;
   }
 
+  function scrollToTop() {
+    scrollTo(0, 0);
+   }
 
   //-----推しメン選択-----
 
@@ -226,6 +229,7 @@
 
       class LikeBlockArea{
         constructor(){
+          scrollToTop()
           board.textContent = null;
           inst.textContent = `好きな割合は？ (進行度:${Math.floor(finished)}%)`;
           this.boardDisplay(mainMember,vsMember);
@@ -360,6 +364,7 @@
 
       class AnotherBlockArea{
         constructor(){
+          scrollToTop()
           board.textContent = null;
           inst.textContent = `好きな割合は？ (進行度:${Math.floor(finished)}%)`;
           this.boardDisplay(mainMember,vsMember);
@@ -501,6 +506,7 @@
 
   class Result{
     constructor(){
+      scrollToTop()
 
       inst.textContent = `結果 (進行度:100%)`;
       let chartData = [["name","point"]];
