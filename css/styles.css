@@ -1,3 +1,4 @@
+/* ボディ全体 */
 body{
   margin:0;
   background:#ccc;
@@ -7,6 +8,14 @@ body{
   font-weight: bold;
 }
 
+img{
+  -webkit-backface-visibility:hidden;
+  backface-visibility:hidden;
+  overflow:hidden;
+}
+
+
+/* ヘッダー */
 header {
   background-color: #34d7ac;
   margin-bottom: 15px;
@@ -15,47 +24,59 @@ header {
   border-color: #ffff;
   text-align: center;
   font-size: 14px;
-
-  /* width: 90%;
-  margin-top: 20px;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 4px; */
 }
 
+@media screen and (max-width: 800px)
+/* レスポンシブ用 */
+{
+  header {
+    font-size: 10px;
+  }
+}
+
+
+/* コンテナ */
 #container{
   margin-left: auto;
   margin-right: auto;
-  width: 95%;
-  /* width: 70%; */
+  /* width: 95%; */
+  width: 70%;
 }
 
-/* @media screen and (max-width: 800px)
+@media screen and (max-width: 800px)
+/* レスポンシブ用 */
 {
   #container {
     width: 95%;
   }
-} */
+}
 
-/* @media screen and (min-width: 800px)
-{
-  #container {
-    width: 70%;
-  }
-} */
 
+/* 説明文 */
 #inst{
   margin-bottom: 8px;
   font-size: 20px;
   text-align: center;
 }
 
+@media screen and (max-width: 800px)
+/* レスポンシブ用 */
+{
+  #inst {
+    font-size: 15px;
+  }
+}
+
+
+/* ボード全体（メンバー画像など） */
 #board{
   background:#fff;
   border-radius: 4px;
   padding: 10px 0;
 }
 
+
+/* ↓-----ココから最初のメンバー選択画面-----↓ */
 #member-board{
   margin: 0;
   padding: 10px;
@@ -70,8 +91,7 @@ header {
 #member-board li{
   background: #33D6AD;
   min-width: 120px;
-  /* width: 18%; */
-  width: 30%;
+  width: 20%;
   margin: 5px;
   cursor: pointer;
   border-radius: 4px;
@@ -79,21 +99,6 @@ header {
   box-shadow: 0 4px 0 #00b386;
   font-size: 14px;
   user-select: none;
-}
-
-/* @media screen and (max-width: 800px)
-{
-  #member-board li{
-    width: 30%;
-  }
-} */
-
-@media screen and (min-width: 700px)
-{
-  #member-board li{
-    width: 18%;
-    max-width: 150px;
-  }
 }
 
 #member-board li.pressed{
@@ -110,6 +115,48 @@ header {
   border-radius: 4px;
 }
 
+@media screen and (max-width: 800px)
+/* レスポンシブ用 */
+{
+  #member-board{
+    margin: 0;
+    padding: 10px;
+    list-style: none;
+    /* display: block; */
+    flex-wrap: wrap;
+  
+    justify-content: center;
+  
+  }
+  
+  #member-board li{
+    background: #33D6AD;
+    min-width: 120px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 4px;
+    text-align:center;
+    box-shadow: 0 4px 0 #00b386;
+    font-size: 14px;
+    user-select: none;
+    display: flex;
+    align-items: center;
+    padding:3px;
+  }
+
+  #member-board img{
+    margin-top: 0;
+    width: 30%;
+    border-radius: 4px;
+  }
+
+  #member-board div{
+    margin-left: 5px;
+  }
+}
+
+
+/* 決定ボタン */
 #button{
   cursor: pointer;
   user-select: none;
@@ -129,7 +176,10 @@ header {
   margin-bottom: 18px;
   box-shadow: none;
 }
+/* ↑-----ココまで最初のメンバー選択画面-----↑ */
 
+
+/* ↓-----ココから回答画面-----↓ */
 #choice-board{
   margin: 0;
   padding-left: 0;
@@ -166,6 +216,15 @@ header {
 
 #choice-board div{
   line-height: 25px;
+}
+
+@media screen and (max-width: 800px)
+/* レスポンシブ用 */
+{
+  #choice-board li{
+    margin: 0;
+    width: 45%;
+  }
 }
 
 #volume-board p {
@@ -272,6 +331,31 @@ header {
 
 /* ↑ココまでスライダー用スタイル↑ */
 
+@media screen and (max-width: 800px)
+/* レスポンシブ用 */
+{
+  #volume-board {
+    padding-bottom:10px;
+    width: 85%;
+    height: 55px;
+  }
+
+  #volume-board input[type="range"] { 
+    width: 80%;
+    position: absolute;
+    margin-top: 20px;
+  }
+
+  #volume-board p {
+    margin-top: 0px;
+    width: 50%;
+  }
+}
+
+/* ↑-----ココまで回答画面-----↑ */
+
+
+/* ↓-----ココから結果画面-----↓ */
 #chart-text{
   text-align: center;
   margin-top: 10px;
@@ -371,8 +455,13 @@ footer span {
   color: #0089bd;
 }
 
-img{
-  -webkit-backface-visibility:hidden;
-  backface-visibility:hidden;
-  overflow:hidden;
+@media screen and (max-width: 800px)
+/* レスポンシブ用 */
+{
+  footer span {
+    display: block;
+    line-height: 40px;
+  }
 }
+
+/* ↑-----ココから結果画面-----↑ */
