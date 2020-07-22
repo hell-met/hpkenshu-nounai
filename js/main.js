@@ -7,45 +7,45 @@
   //-----メンバー情報管理配列-----
 
   const memberList = [
-    ["米村姫良々","http://cdn.helloproject.com/img/artist/m/66ae679e11ce3d82a65921c801bcad62b052fd94.jpg"],
+    ["米村姫良々","pic/202007-yonemura.jpg"],
 
-    ["山田苺","http://cdn.helloproject.com/img/artist/m/937288a8a861c299123d57a0f3eaeb6975e3c57c.jpg"],
+    ["山田苺","pic/202007-yamada.jpg"],
 
-    ["中山夏月姫","http://cdn.helloproject.com/img/artist/m/1fbda0b5fe7ed64a4e23c39e131527c32abdb0f8.jpg"],
+    ["中山夏月姫","pic/202007-nakayama.jpg"],
 
-    ["為永幸音","http://cdn.helloproject.com/img/artist/m/6e219e310c883ccd1d5efd6ef3050131854d21bf.jpg"],
+    ["為永幸音","pic/202007-tamenaga.jpg"],
 
-    ["窪田七海","http://cdn.helloproject.com/img/artist/m/81c2ab229b44e22f1a769dfdb982cec7d93caf0c.jpg"],
+    ["窪田七海","pic/202007-kubota.jpg"],
 
-    ["松原ユリヤ","http://cdn.helloproject.com/img/artist/m/b09f556aaf922648ae971f8519e5a34731d93e4b.jpg"],
+    ["松原ユリヤ","pic/202007-matsubara.jpg"],
 
-    ["斉藤円香","http://cdn.helloproject.com/img/artist/m/e71225edf7dad29687a51dfd468fe23c23d36c41.jpg"],
+    ["斉藤円香","pic/202007-saito.jpg"],
 
-    ["小野田華凜","http://cdn.helloproject.com/img/artist/m/5a4861dda05051f0bbab91ac2c9dcb438acc79ef.jpg"],
+    ["小野田華凜","pic/202007-onoda.jpg"],
 
-    ["広本瑠璃","http://cdn.helloproject.com/img/artist/m/16869970e564919b6d2187c4219292e7f275bef1.jpg"],
+    ["広本瑠璃","pic/202007-hiromoto.jpg"],
 
-    ["橋田歩果","http://cdn.helloproject.com/img/artist/m/b66cf91cf1934509d1a7f3aa6bb07d2a50070c83.jpg"],
+    ["橋田歩果","pic/202007-hashida.jpg"],
 
-    ["西﨑美空","http://cdn.helloproject.com/img/artist/m/f8db9ca3ee4d8a2df50a5b3f55c81bccc70768d1.jpg"],
+    ["西﨑美空","pic/202007-nishizaki.jpg"],
 
-    ["平山遊季","http://cdn.helloproject.com/img/artist/m/5664af7ab55e2aa2241cc27b3b89180e1742f963.jpg"],
+    ["平山遊季","pic/202007-hirayama.jpg"],
 
-    ["北原もも","http://cdn.helloproject.com/img/artist/m/6d560bb0703d3fcd9294630c49306fe2845bd3a5.jpg"],
+    ["北原もも","pic/202007-kitahara.jpg"],
 
-    ["江端妃咲","http://cdn.helloproject.com/img/artist/m/60bb7aeeb99148d3c9bf2e8aae6670279d3e1953.jpg"],
+    ["江端妃咲","pic/202007-ebata.jpg"],
 
-    ["豫風瑠乃","http://cdn.helloproject.com/img/artist/m/caa4e5d4d5db311086614db54fe815229a25bf1d.jpg"],
+    ["豫風瑠乃","pic/202007-yofu.jpg"],
 
-    ["村越彩菜","http://cdn.helloproject.com/img/artist/m/1af02fa116659696b43b752012247524228c29f5.jpg"],
+    ["村越彩菜","pic/202007-murakoshi.jpg"],
 
-    ["植村葉純","http://cdn.helloproject.com/img/artist/m/b124593fb45e913e01bcd36e4d5f89494f333af6.jpg"],
+    ["植村葉純","pic/202007-uemura.jpg"],
 
-    ["石栗奏美","http://cdn.helloproject.com/img/artist/m/d460f3a1553d62407e0720b7da14ff6df5927259.jpg"],
+    ["石栗奏美","pic/202007-ishiguri.jpg"],
 
-    ["河野みのり","http://cdn.helloproject.com/img/artist/m/8123a78c4e4a13d7a39e25b67581ca742b4f2f96.jpg"],
+    ["河野みのり","pic/202007-kawano.jpg"],
 
-    ["西村風凛","http://cdn.helloproject.com/img/artist/m/537e548c6a04cd916fd4bf042f551811f2965853.jpg"]
+    ["西村風凛","pic/202007-nishimura.jpg"]
   ]
 
   //-----初期設定-----
